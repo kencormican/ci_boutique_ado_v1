@@ -48,7 +48,8 @@ INSTALLED_APPS = [
 
     # project apps
     'home',
-    'products'
+    'products',
+    'bag'
 ]
 
 MIDDLEWARE = [
