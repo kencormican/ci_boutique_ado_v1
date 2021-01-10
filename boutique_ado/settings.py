@@ -50,7 +50,7 @@ INSTALLED_APPS = [
     'home',
     'products',
     'bag',
-    'checkout'
+    'checkout',
 
     # Other dependencies
     'crispy_forms',
@@ -86,6 +86,8 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 # `allauth` needs this from django
                 'django.template.context_processors.request',
+                # required for MEDIA_URL template tag 
+                'django.template.context_processors.media',
                 # bag app
                 'bag.contexts.bag_contents',
             ],
